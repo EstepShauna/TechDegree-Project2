@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color:green;
+}
+
+a:active {
+    color:purple;
+}
+
+a:visited {
+    color:red;
+}
+
+h2 {
+    padding: 20px;
+}
+
+/* Class Selectors*/
+
+.main-page,
+.portfolio,
+.footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.main-page,
+.footer {
+    background: #D7A8A8;
+}
+
+.main-page header h1 {
+    font-size: 1.25em;
+    padding: 10px 15px;
+    margin-top: 0;
+    line-height: 2;
+}
+
+.main-page header nav h1 {
+    text-align: center;
+    padding: 0;
+}
+
+.main-page header nav ul {
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.main-page header nav ul li {
+    background: #CDCBCB;
+    border: solid 1px #CDCBCB;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.introduction {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.introduction p {
+    padding-bottom: 25px;
+    line-height: 2;
+}
+
+.introduction img {
+    max-width: 50%;
+}
+
+.introduction img:hover{
+    transform: scale(1.2) rotate(5deg);
+}
+
+.portfolio div p {
+    padding-bottom: 50px;
+}
+
+.footer {
+    margin: 0;
+    line-height: 2;
+}
+
+.footer h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 1.125em;
+}
+
+.contact-info p {
+    font-size: 0.75em;
+    padding-bottom: 1em;
+}
+
+.email, .phone {
+    font-weight: bold;
+    color: rgba(227, 91, 24, 0.97);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.80em;
+}
+
+.footer-nav h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.bottom-nav li {
+    font-size: 0.95em;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.marketing-page:hover,
+.search-page:hover,
+.travel-app:hover,
+.favorite-spots:hover,
+.photo-gallery:hover,
+.calculator:hover {
+    border: 3px solid lightseagreen;
+    border-radius: 3%;
+}
+
+/*media queries***************/
+
+@media (min-width: 768px) {
+    .main-page {
+        padding-bottom: 70px;
+    }
+
+    .main-page header nav ul li {
+        display: inline-block;
+        background-color: transparent;
+        border: 0;
+        margin-top: 0;
+        margin-right: 15px;
+        font-size: 1.2em;
+    }
+
+    .main-page header nav h1 {
+        padding: 10px 15px;
+        margin-top: 0;
+    }
+    
+    .introduction {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .introduction p {
+        width: 50%;
+        padding-right: 10px;
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .introduction img {
+        width: 300px;
+        height: 300px;
+        max-width: 50%;
+    }
+
+    .marketing-page,
+    .search-page,
+    .travel-app,
+    .favorite-spots,
+    .photo-gallery,
+    .calculator {
+        max-width: 45%;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .marketing-page, 
+    .travel-app, 
+    .photo-gallery {
+        float: left;
+        clear: both;
+    }
+
+    .search-page,
+    .favorite-spots,
+    .calculator {
+        float: right;
+    }
+
+    .footer h3 {
+        margin: 0 auto;
+        font-size: 1.125em;
+        }
+
+    .footer p,
+    .contact-info {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+    .contact-info p {
+        font-size: 1em;
+        padding-bottom: .5em;
+        text-align: center;
+    }
+
+    .footer-nav h4 {
+        font-size: 1.2em;
+    }
+
+    .bottom-nav {
+        display: inherit;
+    }
+
+    .bottom-nav li {
+        border: solid 1px transparent;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        font-weight: bold;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .marketing-page:hover,
+    .search-page:hover,
+    .travel-app:hover,
+    .favorite-spots:hover,
+    .photo-gallery:hover,
+    .calculator:hover {
+        border: 3px solid lightseagreen;
+        border-radius: 3%;
+    }
+}
+
+
+
+/* media query for 1024px */
+
+@media (min-width:1024px) {
+
+    nav {
+        display: inline-block;
+    }
+
+    .main-page header nav h1 {
+        font-size: 1.75em;
+        float: left;
+        text-align: center;
+        clear: both;
+        color: darkslategrey;
+    }
+
+    .main-page header nav ul {
+        float: right;
+        margin-top: 0;
+        padding: 15px 15px
+    }
+
+    .main-page header nav ul li {
+        font-size: 1.35em;
+        padding: 10px;
+    }
+
+    .introduction,
+    nav,
+    .portfolio {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .introduction {
+        padding-top: 40px;
+    }
+
+    .introduction p {
+        max-width: 50%;
+        padding: 0px 20px;
+        font-size: 1.50em;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .introduction img {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .projects {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .projects p {
+        font-size: 1em;
+    }
+
+    .footer p {
+        font-size: 1.2em;
+    }
+
+    .footer-nav h4,
+    .bottom-nav {
+        font-size: 1.35em;
+        padding-right: 15px;
+    }
+
+    .marketing-page:hover,
+    .search-page:hover,
+    .travel-app:hover,
+    .favorite-spots:hover,
+    .photo-gallery:hover,
+    .calculator:hover {
+        border: 3px solid lightseagreen;
+        border-radius: 3%;
+    }
+
+}
