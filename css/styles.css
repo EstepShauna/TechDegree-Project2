@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Slabo 27px', serif;
 }
 
 body {
@@ -139,6 +140,10 @@ h2 {
     justify-content: space-between;
 }
 
+.normal-bottom-links {
+    display: none;
+}
+
 .marketing-page:hover,
 .search-page:hover,
 .travel-app:hover,
@@ -251,6 +256,16 @@ h2 {
         clear: both;
     }
 
+    .back-to-top {
+        display: none;
+    }
+
+    .normal-bottom-links {
+        font-size: 0.95em;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
     .marketing-page:hover,
     .search-page:hover,
     .travel-app:hover,
@@ -338,6 +353,16 @@ h2 {
     .bottom-nav {
         font-size: 1.35em;
         padding-right: 15px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .normal-bottom-links {
+        font-size: 0.95em;
+        display: inline-flex;
+        justify-content: space-between;
     }
 
     .marketing-page:hover,
